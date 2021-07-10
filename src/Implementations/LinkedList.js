@@ -11,8 +11,7 @@ class LinkedList {
     length = 0
 
     constructor(value) {
-        this.head = new Node(value)
-        this.tail = this.head
+        this.head = this.tail = new Node(value)
         this.length = 1
     }
 
@@ -22,6 +21,19 @@ class LinkedList {
 
         this.tail = newNode
         this.length++
+    }
+
+    insertAfter(value, toNodeValue) {
+        const newNode = new Node(value)
+
+        this.traverseList(node => {
+            if (node.value === toNodeValue) {
+                const next = node.next
+
+                node.next = newNode
+                newNode.next = next
+            }
+        })
     }
 
     removeByValue(value) {
@@ -87,5 +99,8 @@ myLinkedList.add(25)
 
 myLinkedList.removeByIndex(4)
 myLinkedList.removeByValue(22)
+myLinkedList.insertAfter(44, 23)
+myLinkedList.insertAfter(45, 23)
+myLinkedList.insertAfter(45, 24)
 
 myLinkedList.print()

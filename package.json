@@ -1,0 +1,31 @@
+{
+  "name": "data-structures-in-javascript",
+  "version": "1.0.0",
+  "description": "Data structures implemented in javascript",
+  "main": "Usefull_js_builtin_funcs.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oguz-yilmaz/Data-structures-in-javascript.git"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "javascript",
+    "algorithms"
+  ],
+  "author": "Oguz Yilmaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oguz-yilmaz/Data-structures-in-javascript/issues"
+  },
+  "homepage": "https://github.com/oguz-yilmaz/Data-structures-in-javascript#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}

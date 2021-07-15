@@ -45,7 +45,6 @@ class LinkedList {
                     this.head = next
                 }
 
-
                 if (ind === this.length-1) {
                     this.tail = next
                 }

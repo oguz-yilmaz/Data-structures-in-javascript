@@ -45,6 +45,7 @@ class BinarySearchTree {
 
     /**
      * 3 possible scenario
+     *
      * removing a leaf
      * removing a node with one child
      * removing a node with 2 child

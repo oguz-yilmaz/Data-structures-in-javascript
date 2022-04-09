@@ -1,18 +1,13 @@
-/**
- * Although you can use Javascript's object literals or Maps as hash table out in the wild,
- * we will demonstrate how the implementation will look like
- */
-
 class HashTable {
     values = {}
-    length =  0
-    size =  0
+    length = 0
+    size = 0
 
-    calculateHash (key) {
+    calculateHash(key) {
         return key.toString().length % this.size
     }
 
-    add (key, value) {
+    add(key, value) {
         const hash = this.calculateHash(key)
 
         if (!this.values.hasOwnProperty(hash)) {
@@ -26,7 +21,7 @@ class HashTable {
         return this.values[hash][key] = value
     }
 
-    search (key) {
+    search(key) {
         const hash = this.calculateHash(key)
 
         const hasHashInValues = this.values.hasOwnProperty(hash)
